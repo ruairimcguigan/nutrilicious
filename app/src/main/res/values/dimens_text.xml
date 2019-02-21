@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        NOTE: USE DEFINED TEXT APPEARANCES INSTEAD OF REFERENCING TEXT SIZES IN YOUR LAYOUTS
+     -->
+
+    <!-- Sizes : Do not add new sizes unless UX/UI specifically request it. -->
+    <dimen name="text_size_36">36sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+
+    <!-- should cover all text appearance scenarios. Use these references in styles and text appearances -->
+    <dimen name="text_size_large">@dimen/text_size_36</dimen>
+    <dimen name="text_size_titles_home">@dimen/text_size_28</dimen>
+    <dimen name="text_size_titles">@dimen/text_size_16</dimen>
+    <dimen name="text_size_headers_extra_large">@dimen/text_size_28</dimen>
+    <dimen name="text_size_headers_large">@dimen/text_size_24</dimen>
+    <dimen name="text_size_headers">@dimen/text_size_20</dimen>
+    <dimen name="text_size_buttons">@dimen/text_size_16</dimen>
+    <dimen name="text_size_small_buttons">@dimen/text_size_14</dimen>
+    <dimen name="text_size_default">@dimen/text_size_14</dimen>
+    <dimen name="text_size_small">@dimen/text_size_12</dimen>
+
+</resources>

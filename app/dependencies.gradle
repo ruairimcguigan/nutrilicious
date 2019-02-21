@@ -1,0 +1,221 @@
+/***
+ * Common dependencies file.
+ * If you have a dependency for a shared modules or any other useful for everyone, put it here.
+ * Maintain alphabetical order.
+ */
+
+ext {
+    sdk = [
+            compileVersion: 27,
+            targetVersion : 27,
+            minVersion    : 21
+    ]
+
+    //Libraries versions
+    adjustVersion = "4.12.4"
+    ankoVersion = "0.9"
+    answersVersion = "1.4.1@aar"
+    appdynamicsVersion = "4.5.6.1384"
+    archCompVersion = "1.1.1"
+    arrowVersion = "0.8.1"
+    butterknifeVersion = "9.0.0"
+    butterknifeCompilerVersion = "9.0.0"
+    brazeVersion = "3.1.0"
+    calligraphyVersion = "2.3.0"
+    confettiVersion = "1.1.0"
+    constraintLayoutVersion = "1.1.2"
+    crashlyticsVersion = "2.9.7@aar"
+    dagger2Version = "2.11"
+    facebookstethoVersion = "1.3.0"
+    facebookVersion = "4.36.1"
+    flexboxVersion = "1.0.0"
+    icepickVersion = "3.2.0"
+    javaxAnnotationVersion = "1.0"
+    kotlinXCoroutinesVersion = "1.1.0"
+    lottieVersion = "2.2.5"
+    mickeyDbVersion = "1.0.13"
+    multidexVersion = "1.0.1"
+    okHttpLogInterceptorVersion = "3.8.0"
+    okhttpVersion = "3.6.0"
+    optimizelyXVersion = "2.1.3"
+    ottoVersion = "1.3.5"
+    pagingVersion = "1.0.0"
+    paperDbVersion = "2.1"
+    pcollectionsVersion = "2.1.2"
+    picassoVersion = "2.5.2"
+    picasso2DownloaderVersion = "1.1.0"
+    playInstallReferrerVersion = "1.0"
+    pubnubSdkVersion = "4.3.0"
+    moshi = "2.4.0"
+    retrofitVersion = "2.4.0"
+    retrofitCoroutineAdapterVersion = "0.9.2"
+    retrofitMoshiVersion = '2.4.0'
+    retrofitRxAdapterVersion = "2.3.0"
+    retrofitRxAdapter2Version = "2.3.0"
+    retrolambdaVersion = "3.2.5"
+    rxAndroid2Version = "2.0.1"
+    rxJavaVersion = "1.2.1"
+    rxJava2Version = "2.1.1"
+    salesforceVersion = "5.6.3"
+    statusBarUtilVersion = "1.5.1"
+    supportLibVersion = "27.1.1"
+    threeTenAbpVersion = "1.0.5"
+    jvmThreeTenAbpVersion = "1.3.2"
+
+
+    libs = [
+            adjust                  : "com.adjust.sdk:adjust-android:${adjustVersion}",
+            anko                    : "org.jetbrains.anko:anko-support-v4:${ankoVersion}",
+            answers                 : "com.crashlytics.sdk.android:answers:${answersVersion}",
+            appCompatV7             : "com.android.support:appcompat-v7:${supportLibVersion}",
+            appdynamics             : "com.appdynamics:appdynamics-runtime:${appdynamicsVersion}",
+            archCompRuntime         : "android.arch.lifecycle:runtime:${archCompVersion}",
+            archCompExtensions      : "android.arch.lifecycle:extensions:${archCompVersion}",
+            archCompCompiler        : "android.arch.lifecycle:compiler:${archCompVersion}",
+            archLiveDateCore        : "android.arch.lifecycle:livedata-core:${archCompVersion}",
+            archLiveDataViewModel   : "android.arch.lifecycle:viewmodel:${archCompVersion}",
+            arrowCore               : "io.arrow-kt:arrow-core:${arrowVersion}",
+            arrowTypeclasses        : "io.arrow-kt:arrow-typeclasses:${arrowVersion}",
+            arrowInstancesCore      : "io.arrow-kt:arrow-instances-core:${arrowVersion}",
+            braze                   : "com.appboy:android-sdk-ui:${brazeVersion}",
+            butterknife             : "com.jakewharton:butterknife:${butterknifeVersion}",
+            butterknifeCompiler     : "com.jakewharton:butterknife-compiler:${butterknifeCompilerVersion}",
+            caligraphy              : "uk.co.chrisjenx:calligraphy:${calligraphyVersion}",
+            cardviewV7              : "com.android.support:cardview-v7:${supportLibVersion}",
+            constraintLayout        : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+            crashlytics             : "com.crashlytics.sdk.android:crashlytics:${crashlyticsVersion}",
+            customTabs              : "com.android.support:customtabs:${supportLibVersion}",
+            dagger2                 : "com.google.dagger:dagger:${dagger2Version}",
+            dagger2Compiler         : "com.google.dagger:dagger-compiler:${dagger2Version}",
+            daggerAndroid           : "com.google.dagger:dagger-android:${dagger2Version}",
+            daggerAndroidSupport    : "com.google.dagger:dagger-android-support:${dagger2Version}",
+            daggerAndroidProcessor  : "com.google.dagger:dagger-android-processor:${dagger2Version}",
+            design                  : "com.android.support:design:${supportLibVersion}",
+            facebookSdk             : "com.facebook.android:facebook-android-sdk:${facebookVersion}",
+            facebookStetho          : "com.facebook.stetho:stetho:${facebookstethoVersion}",
+            facebookStethoOkHttp    : "com.facebook.stetho:stetho-okhttp:${facebookstethoVersion}",
+            flexbox                 : "com.google.android:flexbox:${flexboxVersion}",
+            icepick                 : "frankiesardo:icepick:${icepickVersion}",
+            icepickProcessor        : "frankiesardo:icepick-processor:${icepickVersion}",
+            injectX                 : "javax.inject:javax.inject:1",
+            javaxAnnotation         : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}",
+            kotlinXCoroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${kotlinXCoroutinesVersion}",
+            kotlinXCoroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:${kotlinXCoroutinesVersion}",
+            kotlinXCoroutinesRx2    : "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${kotlinXCoroutinesVersion}",
+            kotlinReflection        : "org.jetbrains.kotlin:kotlin-reflect:${kotlin_version}",
+            lottie                  : "com.airbnb.android:lottie:${lottieVersion}",
+            mickeyDb                : "com.justeat.mickeydb:com.justeat.mickeydb.lib:${mickeyDbVersion}",
+            multidex                : "com.android.support:multidex:${multidexVersion}",
+            okHttp                  : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okHttpLogInterceptor    : "com.squareup.okhttp3:logging-interceptor:${okHttpLogInterceptorVersion}",
+            optimizelyX             : "com.optimizely.ab:android-sdk:${optimizelyXVersion}",
+            otto                    : "com.squareup:otto:${ottoVersion}",
+            paging                  : "android.arch.paging:runtime:${pagingVersion}",
+            paperDb                 : "io.paperdb:paperdb:${paperDbVersion}",
+            pcollections            : "org.pcollections:pcollections:${pcollectionsVersion}",
+            percent                 : "com.android.support:percent:${supportLibVersion}",
+            picasso                 : "com.squareup.picasso:picasso:${picassoVersion}",
+            picasso2Downloader      : "com.jakewharton.picasso:picasso2-okhttp3-downloader:${picasso2DownloaderVersion}",
+            playInstallReferrer     : "com.android.installreferrer:installreferrer:${playInstallReferrerVersion}",
+            preferenceV14           : "com.android.support:preference-v14:${supportLibVersion}",
+            pubnub                  : "com.pubnub:pubnub-gson:${pubnubSdkVersion}",
+            recyclerviewV7          : "com.android.support:recyclerview-v7:${supportLibVersion}",
+            retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitCoroutineAdapter: "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${retrofitCoroutineAdapterVersion}",
+            retrofitMoshi           : "com.squareup.retrofit2:converter-moshi:${retrofitMoshiVersion}",
+            retrofitRxAdapter       : "com.squareup.retrofit2:adapter-rxjava:${retrofitRxAdapterVersion}",
+            retrofitRxAdapter2      : "com.squareup.retrofit2:adapter-rxjava2:${retrofitRxAdapter2Version}",
+            retrolambda             : "me.tatarka:gradle-retrolambda:${retrolambdaVersion}",
+            rxAndroid2              : "io.reactivex.rxjava2:rxandroid:${rxAndroid2Version}",
+            rxJava                  : "io.reactivex:rxjava:${rxJavaVersion}",
+            rxJava2                 : "io.reactivex.rxjava2:rxjava:${rxJava2Version}",
+            salesforce              : "com.salesforce.marketingcloud:marketingcloudsdk:${salesforceVersion}",
+            statusBarUtil           : "com.jaeger.statusbarutil:library:${statusBarUtilVersion}",
+            supportV4               : "com.android.support:support-v4:${supportLibVersion}",
+            supportAnnotations      : "com.android.support:support-annotations:${supportLibVersion}",
+            threetenabp             : "com.jakewharton.threetenabp:threetenabp:${threeTenAbpVersion}",
+            transition              : "com.android.support:transition:${supportLibVersion}",
+            vectorDrawables         : "com.android.support:support-vector-drawable:${supportLibVersion}",
+            vectorDrawablesAnim     : "com.android.support:animated-vector-drawable:${supportLibVersion}",
+            loggingInterceptor      : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}"
+    ]
+
+    //Test tools versions
+    assertjVersion = "2.4.0"
+    commonsLang3Version = "3.7"
+    espressoRunnerVersion = "1.0.1"
+    espressoVersion = "3.0.1"
+    falconVersion = "1.0.0"
+    hamcrestVersion = "1.3"
+    junitParamsVersion = '1.1.0'
+    junitVersion = "4.12"
+    kluentVersion = '1.29'
+    mockito2Version = "2.23.4"
+    mockitoKotlinVersion = "2.0.0"
+    mockkVersion = "1.8.12.kotlin13"
+    multidexInstrVersion = "1.0.1"
+    okHttpMockWebServerVersion = "3.8.0"
+    robolectricVersion = "3.5.1"
+    rxidlerVersion = "0.9.0"
+    uiAutomatorVersion = "2.1.3"
+
+    testLibs = [
+            archCompCore           : "android.arch.core:core-testing:${archCompVersion}",
+            assertj                : "org.assertj:assertj-core:${assertjVersion}",
+            coroutinesTest         : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${kotlinXCoroutinesVersion}",
+            espressoContrib        : "com.android.support.test.espresso:espresso-contrib:${espressoVersion}",
+            espressoCore           : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            espressoIdlingRes      : "com.android.support.test.espresso:espresso-idling-resource:${espressoVersion}",
+            espressoIntents        : "com.android.support.test.espresso:espresso-intents:${espressoVersion}",
+            espressoWeb            : "com.android.support.test.espresso:espresso-web:${espressoVersion}",
+            falcon                 : "com.jraska:falcon:${falconVersion}",
+            hamcrestCore           : "org.hamcrest:hamcrest-core:${hamcrestVersion}",
+            hamcrestIntegration    : "org.hamcrest:hamcrest-integration:${hamcrestVersion}",
+            hamcrestLibrary        : "org.hamcrest:hamcrest-library:${hamcrestVersion}",
+            junit                  : "junit:junit:${junitVersion}",
+            junitParams            : "pl.pragmatists:JUnitParams:${junitParamsVersion}",
+            jvmThreeTenAbp         : "org.threeten:threetenbp:${jvmThreeTenAbpVersion}",
+            kluent                 : "org.amshove.kluent:kluent-android:${kluentVersion}",
+            mockk                  : "io.mockk:mockk:${mockkVersion}",
+            mockito2               : "org.mockito:mockito-core:${mockito2Version}",
+            mockitoAndroid         : "org.mockito:mockito-android:${mockito2Version}",
+            mockitoKotlin          : "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoKotlinVersion}",
+            mockitoInline          : "org.mockito:mockito-inline:${mockito2Version}",
+            multidexInstrumentation: "com.android.support:multidex-instrumentation:${multidexInstrVersion}",
+            okHttpMockWebServer    : "com.squareup.okhttp3:mockwebserver:${okHttpMockWebServerVersion}",
+            retrofit2Mock          : "com.squareup.retrofit2:retrofit-mock:${retrofitVersion}",
+            robolectric            : "org.robolectric:robolectric:${robolectricVersion}",
+            rx2idler               : "com.squareup.rx.idler:rx2-idler:${rxidlerVersion}",
+            rxidler                : "com.squareup.rx.idler:rx1-idler:${rxidlerVersion}",
+            shadowsMultidex        : "org.robolectric:shadows-multidex:${robolectricVersion}",
+            testOrchestrator       : "com.android.support.test:orchestrator:${espressoRunnerVersion}",
+            testRules              : "com.android.support.test:rules:${espressoRunnerVersion}",
+            testRunner             : "com.android.support.test:runner:${espressoRunnerVersion}",
+            uiAutomator            : "com.android.support.test.uiautomator:uiautomator-v18:${uiAutomatorVersion}",
+            commonsLang3           : "org.apache.commons:commons-lang3:${commonsLang3Version}",
+            threetenabp            : "org.threeten:threetenbp:${threeTenAbpVersion}"
+    ]
+
+    allprojects {
+        configurations.all {
+            resolutionStrategy {
+                force "com.google.firebase:firebase-iid:17.0.4"
+
+                eachDependency { DependencyResolveDetails details ->
+                    if (details.requested.group == 'com.android.support'
+                            && details.requested.name != 'multidex'
+                            && details.requested.name != 'multidex-instrumentation') {
+                        details.useVersion supportLibVersion
+                    } else if (details.requested.group == 'android.arch.lifecycle') {
+                        details.useVersion archCompVersion
+                    }
+                }
+            }
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}

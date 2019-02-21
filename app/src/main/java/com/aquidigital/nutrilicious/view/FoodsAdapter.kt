@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.rv_foods_item.*
 
 class FoodsAdapter(private var items: List<Food>) : RecyclerView.Adapter<FoodViewHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.rv_foods_item, parent, false)
         return FoodViewHolder(view)

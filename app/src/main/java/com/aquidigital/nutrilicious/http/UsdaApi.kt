@@ -13,5 +13,5 @@ interface UsdaApi {
         @Query("sort") sortBy: Char = 'r',
         @Query("ds") dataSource: String = "Standard Reference",
         @Query("offset") offset: Int = 0
-    ) : Call<ResponseBody>  // allows raw json to be retrived
+    ) : Call<ResponseBody>  // allows raw json to be retrieved
 }

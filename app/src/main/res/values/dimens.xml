@@ -1,5 +1,38 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Standardised metrics and keylines as per Material Spec
+    https://material.io/guidelines/layout/metrics-keylines.html#
+    -->
+    <dimen name="grid_0">0dp</dimen>
+    <dimen name="grid_4">4dp</dimen>
+    <dimen name="grid_8">8dp</dimen>
+    <dimen name="grid_12">12dp</dimen>
+    <dimen name="grid_16">16dp</dimen>
+    <dimen name="grid_20">20dp</dimen>
+    <dimen name="grid_24">24dp</dimen>
+    <dimen name="grid_28">28dp</dimen>
+    <dimen name="grid_32">32dp</dimen>
+    <dimen name="grid_36">36dp</dimen>
+    <dimen name="grid_40">40dp</dimen>
+    <dimen name="grid_44">44dp</dimen>
+    <dimen name="grid_48">48dp</dimen>
+    <dimen name="grid_52">52dp</dimen>
+    <dimen name="grid_56">56dp</dimen>
+    <dimen name="grid_60">60dp</dimen>
+    <dimen name="grid_64">64dp</dimen>
+    <dimen name="grid_72">72dp</dimen>
+    <dimen name="grid_76">76dp</dimen>
+    <dimen name="grid_80">80dp</dimen>
+    <dimen name="grid_92">92dp</dimen>
+    <dimen name="grid_96">96dp</dimen>
+    <dimen name="grid_100">100dp</dimen>
+    <dimen name="grid_120">120dp</dimen>
+    <dimen name="grid_200">200dp</dimen>
+    <dimen name="grid_232">232dp</dimen>
+    <dimen name="grid_248">248dp</dimen>
+
+
+
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="medium_padding">8dp</dimen>

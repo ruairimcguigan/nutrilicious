@@ -4,7 +4,6 @@ import com.aquidigital.nutrilicious.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import okhttp3.logging.HttpLoggingInterceptor.*
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.util.concurrent.TimeUnit
@@ -35,9 +34,9 @@ private fun buildHttpClient(): OkHttpClient = OkHttpClient.Builder()
 
 private fun loggingInterceptor() = HttpLoggingInterceptor().apply {
     level = if (BuildConfig.DEBUG) {
-        Level.BODY // only logs in debug
+        HttpLoggingInterceptor.Level.BODY // only logs in debug
     } else {
-        Level.NONE //
+        HttpLoggingInterceptor.Level.NONE //
     }
 }
 

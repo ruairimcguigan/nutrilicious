@@ -5,6 +5,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.LinearLayoutManager.VERTICAL
 import com.aquidigital.nutrilicious.R
 import com.aquidigital.nutrilicious.http.NETWORK
 import com.aquidigital.nutrilicious.http.USDA_USDA_API
@@ -32,7 +33,7 @@ class FoodsActivity : AppCompatActivity() {
     private fun setSearchFoodList() = with(rvFoodsList) {
         adapter = FoodsAdapter(sampleData())
         layoutManager = LinearLayoutManager(this@FoodsActivity)
-        addItemDecoration(DividerItemDecoration(this@FoodsActivity, LinearLayoutManager.VERTICAL))
+        addItemDecoration(DividerItemDecoration(this@FoodsActivity, VERTICAL))
         setHasFixedSize(true)
 
     }
